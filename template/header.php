@@ -11,6 +11,7 @@
  <link rel="stylesheet" href="css/QueHacer.css">
     <link rel="stylesheet" href="css/quevisitar.css"> 
     <link rel="stylesheet" href="css/stfiestas.css"> 
+    <link rel="stylesheet" href="css/gastronomia.css"> 
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Work+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -111,10 +112,10 @@
                   <ul class="Contenedor__Galeria">
                       <li><a class="Direccion__2" href="galeria_turistica_santa_elena.php"> <b>Atractivos turisticos</b></a></li>
                         <li>
-                        <a class="Direccion__2" href="leyenda_y_tradiciones_s_E.php"> <b>Leyendas y Tradiciones</b></a>
+                        <a class="Direccion__2" href="leyenda_y_tradiciones_s_e.php"> <b>Leyendas y Tradiciones</b></a>
                         </li>
                         <li>
-                        <a class="Direccion__2" href="galeria__Gastronomia.php"> <b>Gastronomía</b></a>
+                        <a class="Direccion__2" href="galeria__gastronomia.php"> <b>Gastronomía</b></a>
                         </li>
                    
                   </ul>

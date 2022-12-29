@@ -13,7 +13,7 @@ include('./template/header.php');
 
 <section class="contenedor">
   <div class="Contendor__imagen">
-    <img src="imagenes/Gastronomia/curia/Bandejita Marinera .jpg" class="imagen__gastro2" alt="">
+    <img src="imagenes/Gastronomia/curia/146__Bandejita_Marinera.jpg" class="imagen__gastro2" alt="">
   </div>
   <div class="texto">
     <h2 class="Titulo__gastro">Lo mas fresco del mar a tu mesa</h2>
@@ -30,7 +30,7 @@ include('./template/header.php');
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ea nihil iusto vel qui quidem magni autem velit? Aspernatur earum architecto eum amet saepe aut placeat dolor harum! Perspiciatis, obcaecati.</p>
   </div>
   <div class="Contendor__imagen">
-    <img src="imagenes/Gastronomia/curia/Camarones_al_ajillo.JPG" class="imagen__gastro" alt="">
+    <img src="imagenes/Gastronomia/curia/147__Camarones_al_ajillo.JPG" class="imagen__gastro" alt="">
   </div>
 
 
@@ -38,7 +38,7 @@ include('./template/header.php');
 <hr class="divisor__10">
 <section class="contenedor">
   <div class="Contendor__imagen">
-    <img src="imagenes/Gastronomia/curia/Ceviche_de_Camarón.jpg" class="imagen__gastro2" alt="">
+    <img src="imagenes/Gastronomia/curia/148__Ceviche_de_Camarón.jpg" class="imagen__gastro2" alt="">
   </div>
   <div class="texto">
     <h2 class="Titulo__gastro">Los camarones mas fresco de santa elena</h3>
@@ -52,7 +52,7 @@ include('./template/header.php');
 <h1 class="principal__2">Descubre más sobre la cocina de Anconcito</h1>
 <section class="contenedor__2">
   <div class="Contendor__imagen2">
-    <img src="imagenes/Gastronomia/curia/DSC_0151.JPG" class="imagen__gastro2" alt="">
+    <img src="imagenes/Gastronomia/curia/149__ver_Mas.JPG" class="imagen__gastro2" alt="">
   </div>
   <div class="texto">
     <h2 class="Titulo__gastro">Ancón una cuna culinaria</h3>

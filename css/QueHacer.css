@@ -117,7 +117,7 @@
 	color: rgb(59 61 66);
     font-size: 3.313rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800; 
+    font-weight: 100; 
     padding: .5rem  1rem; 
     line-height: 1;
     text-transform: capitalize;
@@ -208,7 +208,7 @@
 	color: rgb(59 61 66);
     font-size: 2.53rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800; 
+    font-weight: 100; 
     padding: .5rem  1rem; 
     line-height: 1;
     text-transform: capitalize;
@@ -245,10 +245,12 @@
 }
 .Contendor__imagen2{
 	width: 50%;
-	
-	
 }
 
+.Contendor__imagen2 img{
+	width: 50%;
+	height: 150px;
+}
 .texto3{
 	width: 100%;
 	font-size: 20px;
