@@ -32,7 +32,6 @@
                 <input type="text" name="correo" id="correo" class="modal__entrada" placeholder="Correo electrónico">
                 <input type="text" name="usuario" id="usuario" class="modal__entrada" placeholder="usuario">
                 <input type="password" name="contrasenia" id="contrasenia" class="modal__entrada" placeholder="Contraseña">
-                <input type="password" name="contraseniar" id="contraseniarp" class="modal__entrada" placeholder="Repetir Contraseña">
                 
 
                 <a href="#" class="modal__close modal__close_Registro">
