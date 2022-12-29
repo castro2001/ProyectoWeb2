@@ -3,8 +3,6 @@
 <?php  
 include('./template/header.php');  
 ?>
-<h1 class="principal">Disfruta del sabor de Ancon</h1>
-
 <section class="contenedor">
   <div class="Contendor__imagen">
     <img src="imagenes/Gastronomia/Ancon/131__ceviche_marisco.jpg" class="imagen__gastro" alt="">
