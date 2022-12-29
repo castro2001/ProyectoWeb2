@@ -31,8 +31,10 @@
                 <a href="#" class="Menu__link">
                     Donde ir
                 </a>
-                 <ul class="menu__nesting1">
-                     <h2 class="TituliD">Descubre  nuestros destinos</h2> 
+                 <div class="menu__nesting1">
+                      <div class="titulo">
+                        <h2 >Descubre  nuestros destinos</h2>
+                      </div>
                     <div  class="Contenedor__nesting1" id="flex">
                       <ul class="list__show" id="Control">
                         <li ><a href="nunez.php" class=" nav_item  "  id="Id_Nunez" onmouseover="mostrar_1()" onmouseout="No_mostrar_1()">Las Nuñez</a></li>
@@ -72,7 +74,7 @@
                                 <li id="Text_Box_Ancón" class="Text Text8 " onmouseover="mostrar_8()" onmouseout="No_mostrar_8()"  >Ancon</li> 
                             </ul>
                     </div> 
-                </ul>
+                </div>
             </li>
 
            <li class="menu__item">
@@ -110,12 +112,12 @@
                 </a>
                  <div class="menu__nesting3">
                   <ul class="Contenedor__Galeria">
-                      <li><a class="Direccion__2" href="galeria_turistica_santa_elena.php"> <b>Atractivos turisticos</b></a></li>
+                      <li><a class="" href="galeria_turistica_santa_elena.php"> <b>Atractivos turisticos</b></a></li>
                         <li>
-                        <a class="Direccion__2" href="leyenda_y_tradiciones_s_e.php"> <b>Leyendas y Tradiciones</b></a>
+                        <a class="" href="leyenda_y_tradiciones_s_e.php"> <b>Leyendas y Tradiciones</b></a>
                         </li>
                         <li>
-                        <a class="Direccion__2" href="galeria__gastronomia.php"> <b>Gastronomía</b></a>
+                        <a class="" href="galeria__gastronomia.php"> <b>Gastronomía</b></a>
                         </li>
                    
                   </ul>

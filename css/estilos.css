@@ -40,7 +40,7 @@ h1 , h2 ,h3, h4,h5,h6{
 }
 
 a , p , button , span {
-    font-family: 'CPoppins',sans-serif;
+    font-family: 'Poppins',sans-serif;
 }
 .menu__navegacion{
     display: flex;
@@ -184,17 +184,31 @@ a , p , button , span {
 
 } 
 
+.titulo{
+position: relative;
+bottom: 50px;
+left: 50px;
+width: 100%;
+height: 10px;
+}
 
+.titulo h2{
+    font-size: 20px;
+    color: var(--dark);
 
+}
+/* 
 .TituliD{
-    font-size: 25px;
+background-color: #000;
+wudth
+    font-size: 19px;
     height: 15px;
     position: relative;
     top: 15px;
     left: 2rem;
     color: var(--gray-dark);
-    display: flex;
-}
+    
+} */
 
 
 .list__show {
@@ -211,8 +225,7 @@ width: 250px;
 .list__show li .nav_item {
     font-size: 1.3rem;
     text-transform: capitalize;
-    font-weight: bolder;
-    color: #111; 
+    color: var(--dark); 
 }
 
 
@@ -480,8 +493,14 @@ padding: 10px 15px;
 
     }
     .Contenedor__Galeria li{
-        margin: 14px 12px;
-        padding: 5px 20px;
+        margin: 14px 2px;
+
+        
+    }
+
+     .Contenedor__Galeria li a{
+       color: var(--dark);
+       padding: 5px 20px;
     }
 
      .Contenedor__Galeria li a:hover{

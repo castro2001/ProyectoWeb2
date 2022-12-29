@@ -103,7 +103,7 @@
     font-family: 'Montserrat', sans-serif;
     color: rgb(220 53 69);
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 10px;
 }
 
 .modal__login{
@@ -111,7 +111,7 @@
     flex-direction: column;
     /* background: #000; */
     height: 180px;
-    margin-top: 4rem;
+    margin-top: 10pxrem;
 }
 
 .modal__title__input{
@@ -193,31 +193,21 @@
     margin-top: 10px;
 }
 
-.modal__contenedor__botones a{
-    margin-right: 2rem;
-    margin-top: 2rem;
-    font-size: 19px;
-    text-transform: capitalize;
-    background-color: rgba(108 117 125 / .5);
-    border-radius: 5px;
-    padding: 4px 8px;
-    color: rgb(52 58 64);
-}
 
-.modal__btn__registro{
+
+.modal__btn__registro,
+.modal__btn{
 margin-right: 2rem;
     margin-top: 0rem;
     font-size: 14px;
     text-transform: capitalize;
-    background-color: rgba(108 117 125 / .5);
     border-radius: 5px;
-    padding: 4px 8px;
+    padding: 2px 8px;
     color: rgb(52 58 64);
-    font-family:'Work Sans', sans-serif;
+    font-family:'Poppins', sans-serif;
     outline: none;
     cursor: pointer;
     border: none;
-    outline: none;
 }
 
 .modal__btn__registro:hover{
@@ -225,14 +215,8 @@ margin-right: 2rem;
     color: #fff;
 }
 
-.modal__btn__login{
 
-    background-color: var(--gray-dark);
-}
-
-
-
-.modal__btn__login:hover{
+.modal__btn:hover{
     background-color: rgb(0 123 255);
     color: #fff;
 }

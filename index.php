@@ -14,9 +14,8 @@
                 <i class="fa fa-close" aria-hidden="true"></i>
             </a>
             <div class="modal__contenedor__botones">
-               <a href="#" class="modal__btn__registro">Registarse</a>
-               <a href="#" class="modal__btn__login">iniciar sesion</a>
-                <!-- <button type="submit"  name="Ingresar" class="modal__btn__login">iniciar sesion</button> -->
+               <button   class="modal__btn__registro">crear cuenta</button>
+              <button type="submit"  name="Ingresar" class="modal__btn">iniciar sesion</button
             </div>
         </form>
 
@@ -40,7 +39,7 @@
                 <i class="fa fa-close" aria-hidden="true"></i>
                 </a>
                 <div class="modal__contenedor__botones">
-                    <button type="submit" name="registrar" class="modal__btn__registro">Registrarte</button>
+                    <button type="submit" name="registrar" class="modal__btn__registro">crear cuenta</button>
                 </div>
         
         </form>
