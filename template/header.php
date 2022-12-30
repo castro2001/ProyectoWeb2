@@ -11,7 +11,7 @@
  <link rel="stylesheet" href="css/QueHacer.css">
     <link rel="stylesheet" href="css/quevisitar.css"> 
     <link rel="stylesheet" href="css/stfiestas.css"> 
-    <link rel="stylesheet" href="css/gastronomia.css"> 
+    <!-- <link rel="stylesheet" href="css/gastronomia.css">  -->
     <link rel="stylesheet" href="css/galeria-santa.css"> 
     <link rel="stylesheet" href="css/galeria.css"> 
 
@@ -39,10 +39,10 @@
                       </div>
                     <div  class="Contenedor__nesting1" id="flex">
                       <ul class="list__show" id="Control">
-                        <li ><a href="nunez.php" class=" nav_item  "  id="Id_Nunez" onmouseover="mostrar_1()" onmouseout="No_mostrar_1()">Las Nuñez</a></li>
-                        <li><a href="entrada.php" class="nav_item " id="Id_La_Entrada" onmouseover="mostrar_2()" onmouseout="No_mostrar_2()">La Entrada</a>            
+                        <li ><a href="lanunez.php" class=" nav_item  "  id="Id_Nunez" onmouseover="mostrar_1()" onmouseout="No_mostrar_1()">Las Nuñez</a></li>
+                        <li><a href="#" class="nav_item " id="Id_La_Entrada" onmouseover="mostrar_2()" onmouseout="No_mostrar_2()">La Entrada</a>            
                         </li>
-                        <li ><a href="curia.php" class="nav_item " id="Id_Curia"onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >Curía</a>            
+                        <li ><a href="#" class="nav_item " id="Id_Curia"onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >Curía</a>            
                         </li>
                         <li ><a href="sanjose.php" class="nav_item " id="Id_San_Jose" onmouseover="mostrar_4()" onmouseout="No_mostrar_4()">San José</a>                 
                         </li>
@@ -114,12 +114,12 @@
                 </a>
                  <div class="menu__nesting3">
                   <ul class="Contenedor__Galeria">
-                      <li><a class="" href="galeria_turistica_santa_elena.php"> <b>Atractivos turisticos</b></a></li>
+                      <li><a  href="galeria_turistica_santa_elena.php"> <b>Atractivos turisticos</b></a></li>
                         <li>
-                        <a class="" href="leyenda_y_tradiciones_s_e.php"> <b>Leyendas y Tradiciones</b></a>
+                        <a  href="leyenda_y_tradiciones_s_e.php"> <b>Leyendas y Tradiciones</b></a>
                         </li>
                         <li>
-                        <a class="" href="galeria__gastronomia.php"> <b>Gastronomía</b></a>
+                        <a  href="galeria__gastronomia.php"> <b>Gastronomía</b></a>
                         </li>
                    
                   </ul>

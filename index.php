@@ -138,7 +138,7 @@ if (isset($_POST["Crear_Cuenta"])){
         </figure>
 
         <figure class="Card__Wrapper">
-            <img src="imagenes/sanjose.jpg" alt="imagen1" class="ImagenWrapper" id="ImagenWrapper__4">
+            <img src="./imagenes/sanjose.jpg" alt="imagen1" class="ImagenWrapper" id="ImagenWrapper__4">
         </figure>
 
         <figure class="Card__Wrapper">
@@ -186,17 +186,17 @@ if (isset($_POST["Crear_Cuenta"])){
                 <ul class="MapaInteractivo__Localizador" >
                     <li id="PuntoNunez"   onmousemove="Ver__Comuna__N()"  >
                         <span class="Circle C1"></span>
-                        <a href="nunez.php" class="Text Text1" > Las Nuñez</a>                   
+                        <a href="lasnunez.php" class="Text Text1" > Las Nuñez</a>                   
                     </li>
 
                     <li id="PuntoEntrada"  onmousemove="Ver__Comuna__E()" >
                         <span class="Circle  C2"></span>
-                        <a href="entrada.php" class="Text Text2" > La Entrada </a>
+                        <a href="#" class="Text Text2" > La Entrada </a>
                     </li>
 
                     <li id="PuntoCuria"  onmousemove="Ver__Comuna__C()" >
                         <span class="Circle C3"></span>
-                        <a href="curia.php" class="Text Text3" >  Curía</a>
+                        <a href="#" class="Text Text3" >  Curía</a>
                     </li>
 
                     <li  id="PuntoSanJose"   onmousemove="Ver__Comuna__SJ()">
