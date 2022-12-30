@@ -186,44 +186,44 @@ if (isset($_POST["Crear_Cuenta"])){
                 <ul class="MapaInteractivo__Localizador" >
                     <li id="PuntoNunez"   onmousemove="Ver__Comuna__N()"  >
                         <span class="Circle C1"></span>
-                        <a href="#" class="Text Text1" > Las Nuñez</a>                   
+                        <a href="nunez.php" class="Text Text1" > Las Nuñez</a>                   
                     </li>
 
                     <li id="PuntoEntrada"  onmousemove="Ver__Comuna__E()" >
                         <span class="Circle  C2"></span>
-                        <a href="#" class="Text Text2" > La Entrada </a>
+                        <a href="entrada.php" class="Text Text2" > La Entrada </a>
                     </li>
 
                     <li id="PuntoCuria"  onmousemove="Ver__Comuna__C()" >
                         <span class="Circle C3"></span>
-                        <a href="#" class="Text Text3" >  Curía</a>
+                        <a href="curia.php" class="Text Text3" >  Curía</a>
                     </li>
 
                     <li  id="PuntoSanJose"   onmousemove="Ver__Comuna__SJ()">
                         <span class="Circle C4"></span>
-                        <a href="#" class="Text Text4" > San Jose</a>
+                        <a href="sanjose.php" class="Text Text4" > San Jose</a>
                     </li>
 
                     <li id="PuntoOlon"  onmousemove="Ver__Comuna__O()" >
                         <span class="Circle C5"></span>
-                        <a href="#" class="Text Text5" > Olon</a>
+                        <a href="olon.php" class="Text Text5" > Olon</a>
                     </li>
 
                     <li id="PuntoMontanita" onmousemove="Ver__Comuna__M()" >
                         <span class="Circle C6"></span>
-                        <a href="#" class="Text Text6" >  Montañita</a>
+                        <a href="montanita.php" class="Text Text6" >  Montañita</a>
                     </li>
 
 
                     <li id="PuntoAconcito"  onmousemove="Ver__Comuna__AC()" >
                         <span class="Circle  C7__Mapa"></span>
-                        <a href="#" class="Text Text7 Text7__Mapa" >  Aconcito</a>
+                        <a href="anconcito.php" class="Text Text7 Text7__Mapa" >  Aconcito</a>
                     </li>
 
 
                     <li id="PuntoAcon"  onmousemove="Ver__Comuna__A()"  >
                         <span class="Circle  C8__Mapa"></span>
-                        <a href="#" class="Text Text8 Text8__Mapa" >  Ancon</a>
+                        <a href="ancon.php" class="Text Text8 Text8__Mapa" >  Ancon</a>
                     </li>
                 </ul>
             </figure>
