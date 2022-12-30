@@ -8,6 +8,8 @@
 
 :root{
     --blue: rgb(8,32,50);
+        --blueO: rgba( 8  32 50 / .8);
+
     --blueo: rgb(8 32 50 / .);
     --indigo: rgb(102 16 242);
     --purple: rgb(111 66 193);
@@ -32,6 +34,7 @@
 }
 body{
     overflow-x: hidden;
+    background-color: var(--light);
 }
 
 h1 , h2 ,h3, h4,h5,h6{
@@ -493,14 +496,15 @@ padding: 10px 15px;
 
     }
     .Contenedor__Galeria li{
-        margin: 14px 2px;
+        margin:  14px auto;
 
         
     }
 
      .Contenedor__Galeria li a{
        color: var(--dark);
-       padding: 5px 20px;
+       /* padding: 5px 20px; */
+       text-align: center;
     }
 
      .Contenedor__Galeria li a:hover{
@@ -521,7 +525,8 @@ padding: 10px 15px;
         width: 100rem;
         height: 50vh;
         overflow: hidden;
-        background-color:var(--light);
+        background-color:var(--blueO);
+        backdrop-filter: blur(15px);
         /* border-radius: 10px; */
         /* backdrop-filter: blur(20px); */
         /* background-color: rgba(255,255,255, 0.285); */
@@ -529,7 +534,16 @@ padding: 10px 15px;
         /* background-color: rgba(255,255,255,0.4);  */
         z-index: 10000;
     }
-    
+     .titulo_buscador{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: auto;
+        font-size: 19px;
+        color: var(--light);
+    position: relative;
+    top: 5.8rem;
+    }
     .busqueda__flex{
         display: flex;
         justify-content: center;

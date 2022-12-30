@@ -15,7 +15,7 @@
             </a>
             <div class="modal__contenedor__botones">
                <button   class="modal__btn__registro">crear cuenta</button>
-              <button type="submit"  name="Ingresar" class="modal__btn">iniciar sesion</button
+              <button type="submit"  name="Ingresar" class="modal__btn">iniciar sesion</button>
             </div>
         </form>
 
@@ -24,14 +24,84 @@
 </section> 
 
 <section class=" modal__registro" >
+
+<?php 
+include './db.php';
+
+
+if (isset($_POST["Crear_Cuenta"])){
+    $usuario = mysqli_real_escape_string($conexion, $_POST['username']);
+    $clave = mysqli_real_escape_string($conexion, $_POST['password']);
+    $nombre = mysqli_real_escape_string($conexion, $_POST['nombre']);
+    $apellido = mysqli_real_escape_string($conexion, $_POST['apellido']);
+    $correo = mysqli_real_escape_string($conexion, $_POST['correo']);
+    $fecha =  $_POST['fecha'];
+    $sexo = mysqli_real_escape_string($conexion, $_POST['sexo']);
+    // $claver = mysqli_real_escape_string($conexion, $_POST['contraseniar']);
+
+    // verificar si la contraseña es correcta
+    $clave_encriptada = sha1($clave);
+    $sqlUser = "SELECT id from Usuarios WHERE username ='$usuario'";
+
+    $resultadoUser = $conexion->query($sqlUser);
+    $filas = $resultadoUser -> num_rows;
+
+    // delaclarar si la fila es mayor a cero
+    if($filas > 0)
+    {
+        echo "<script> alert('el usuario ya existe ');
+                window.location ='./index.php';
+                </script>";
+    }
+
+    // inserto la informacion del usuarios username, clave, nombre, apellido, correo,sexo
+    $sql = "INSERT INTO Usuarios (username, clave, nombre, apellido,correo,fecha_nacimiento,sexo) 
+            VALUE('$usuario', '$clave','$nombre','$apellido','$correo', '$fecha' ,'$sexo' )";
+    $resultadosql=$conexion ->query($sql);
+    if($resultadosql > 0){
+        	echo "<script>
+						alert('registro Existoso');
+						window.location = './index.php;
+					</script>";
+	}else {
+			echo "<script>
+					alert('error a registarse');
+					 window.location = './index.php';
+				</script>";
+		} 
+
+}
+
+
+?>
+
     <div class="modal__contenedor__registro">
         <h2 class=" modal__title__registro">Registro</h2>
         <form  method="post" class="modal__login__flex1" autocomplete="off">
-                <input type="text" name="nombre" id="nombre" class="modal__entrada" placeholder="Nombre">
-                <input type="text" name="apellido" id="apellido" class="modal__entrada" placeholder="Apellidos">
-                <input type="text" name="correo" id="correo" class="modal__entrada" placeholder="Correo electrónico">
-                <input type="text" name="usuario" id="usuario" class="modal__entrada" placeholder="usuario">
-                <input type="password" name="contrasenia" id="contrasenia" class="modal__entrada" placeholder="Contraseña">
+            <label> <i class="fa fa-user-circle" aria-hidden="true"></i> Usuario: <br>
+            <input type="text" name="username" class="modal__entrada" autocomplete="off" require></label><br>
+
+            <label> <i class="fa fa-key" aria-hidden="true"></i> Contraseña: <br>
+            <input type="password" name="password" class="modal__entrada" autocomplete="off" require></label><br>
+
+            <label> <i class="fa fa-user-circle" aria-hidden="true"></i> Nombre: <br>
+            <input type="text" name="nombre" class="modal__entrada" autocomplete="off" require></label><br>
+
+            <label> <i class="fa fa-user-circle" aria-hidden="true"></i> apellido: <br>
+            <input type="text" name="apellido" class="modal__entrada" autocomplete="off" require></label><br>
+
+            <label> <i class="fa fa-key" aria-hidden="true"></i> fecha de nacimiento: <br>
+            <input type="date" name="fecha" id="fecha" placeholder="2001/10/12" class="modal__entrada" autocomplete="off" require><br>
+
+            <label> <i class="fa fa-user-circle" aria-hidden="true"></i> correo electronico: <br>
+            <input type="email" name="correo" class="modal__entrada"  ></label><br>
+
+            </label><br>
+            <label> <i class="fa fa-key" aria-hidden="true"></i> sexo: <br>
+            <input type="radio" name="sexo" value="M" id="gender" checked><label>Hombre</label><br>
+            <input type="radio" name="sexo" value="F" id="gender" ><label>Mujer</label>
+
+            <br>
                 
 
                 <a href="#" class="modal__close modal__close_Registro">

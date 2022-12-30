@@ -1,0 +1,63 @@
+.color_Texto{
+    text-align: justify;
+    color: black;
+}
+.Titulo {color: rgb(22 46 68 );
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(14,69,206,0.92);}
+.Texto_Intro{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.Parrafos{
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+    margin: 30px;
+}
+
+ 
+.slider-frame {
+    width: 500px;
+    height: auto;
+    margin:50px auto 0;
+    overflow: hidden;
+    
+    }
+        
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    
+            
+    animation: slide 25s infinite alternate ease-in-out;
+    }
+        
+.slider-frame li {
+        width: 100%;
+        list-style: none;
+        
+        }
+        
+.slider-frame img {
+        width: 100%;
+        
+        }
+        
+        @keyframes slide {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+            
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+            
+            50% {margin-left: -200%;}
+            100% {margin-left: -200%;}
+            
+            
+        }

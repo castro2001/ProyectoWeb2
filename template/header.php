@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/quevisitar.css"> 
     <link rel="stylesheet" href="css/stfiestas.css"> 
     <link rel="stylesheet" href="css/gastronomia.css"> 
+    <link rel="stylesheet" href="css/galeria-santa.css"> 
+    <link rel="stylesheet" href="css/galeria.css"> 
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Work+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -137,8 +139,9 @@
         <li class="menu__item">
             <a href="#" class="search "><i class="fa fa-search" aria-hidden="true"></i> </a>
               <div class="Contenedor__busqueda">
+                <h3 class="titulo_buscador">Buscador de Comuna de Santa Elena</h3>
                 <form action="<?php include('./busqueda.php');?>" method="post" class="busqueda__flex">
-                  <input type="text" name="busqueda" id="busqueda" placeholder="buscar " class="busqueda__entrada">
+                  <input type="text" name="busqueda" id="busqueda" placeholder="Ejemplo: Olon" class="busqueda__entrada">
                   <button class="btn__search"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </form>
              </div>

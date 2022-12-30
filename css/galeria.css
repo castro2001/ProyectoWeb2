@@ -1,0 +1,62 @@
+.span12 {
+    width: 97%;
+}
+
+
+.gallery-post-grid li {
+    list-style: none; 
+    float: left; 
+    margin-bottom: 30px;
+}
+
+.span3 {
+    width: 23%;
+}
+
+.gallery-item { 
+    margin-bottom:15px; 
+    margin-top:15px; 
+}
+
+.project-details {
+	background:#f8f8f8;
+	display: block;
+	padding:10px;
+	border-bottom: 1px dotted #a9a9a9;
+	font-family: Georgia;
+	font-style: italic;
+	width: auto\9;
+    height: auto;
+    max-width: 100%;
+}
+
+.project-details {
+    color: #6f6f6f;
+}
+
+.project-details a {
+    color: #333333;
+}
+
+.project-details a:hover {
+    color:blue; 
+    text-decoration: none;
+}
+
+
+
+.row {
+    margin-left: -20px;
+    *zoom: 1;
+}
+
+
+[class*="span"] {
+    
+    min-height: 1px;
+    margin-left: 20px;
+}
+
+
+
+
