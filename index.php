@@ -328,8 +328,9 @@ if (isset($_POST["Crear_Cuenta"])){
             <img src="imagenes/Logo.png" alt="" srcset="">
         </div>
     </div>
-<hr class="salto">
 </section>
+<br>
+
 <!-- fondo_card.jpg -->
 <section>
     <div class="contenedor__3"> 

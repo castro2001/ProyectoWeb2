@@ -8,7 +8,6 @@
 
 :root{
     --blue: rgb(8,32,50);
-        --blueO: rgba( 8  32 50 / .8);
 
     --blueo: rgb(8 32 50 / .);
     --indigo: rgb(102 16 242);
@@ -33,8 +32,9 @@
     --dark: rgb(52 58 64);
 }
 body{
+    background-color: rgba(255 255 255 /.5);
     overflow-x: hidden;
-    background-color: var(--light);
+
 }
 
 h1 , h2 ,h3, h4,h5,h6{
@@ -703,7 +703,8 @@ height: 34vh;
     width: 100%;
     height: 100vh;
     padding: 0 88px;
-    
+         background-color:rgba( 8  32 50 / .3);
+        backdrop-filter: blur(15px); 
 }
 
 
@@ -957,7 +958,8 @@ margin-top: 2.3rem;
     margin: 0 auto;
     /* background-color: #8d4c4c; */
     position: relative;
-    margin-bottom: 4.2rem;
+    margin-bottom: 10px;
+    background: #000;
   }
 
 .contenedor__v  img{
