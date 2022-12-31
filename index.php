@@ -223,8 +223,8 @@
 
  <div class="flex__container">
     <article class="flex__item__1">
-        <header class="Titulo__Principal">
-            <h3 >¡Conoce Santa Elena!</h3>
+        <header >
+            <h3 class="Titulo__Principal">¡Conoce Santa Elena!</h3>
         </header>
 
         <p class="Descripcion__ST">
