@@ -26,51 +26,50 @@
 <section class=" modal__registro" >
 
 <?php 
-include './db.php';
+    include './db.php';
 
 
-if (isset($_POST["Crear_Cuenta"])){
-    $usuario = mysqli_real_escape_string($conexion, $_POST['username']);
-    $clave = mysqli_real_escape_string($conexion, $_POST['password']);
-    $nombre = mysqli_real_escape_string($conexion, $_POST['nombre']);
-    $apellido = mysqli_real_escape_string($conexion, $_POST['apellido']);
-    $correo = mysqli_real_escape_string($conexion, $_POST['correo']);
-    $fecha =  $_POST['fecha'];
-    $sexo = mysqli_real_escape_string($conexion, $_POST['sexo']);
-    // $claver = mysqli_real_escape_string($conexion, $_POST['contraseniar']);
+    if (isset($_POST["Crear_Cuenta"])){
+        $usuario = mysqli_real_escape_string($conexion, $_POST['username']);
+        $clave = mysqli_real_escape_string($conexion, $_POST['password']);
+        $nombre = mysqli_real_escape_string($conexion, $_POST['nombre']);
+        $apellido = mysqli_real_escape_string($conexion, $_POST['apellido']);
+        $correo = mysqli_real_escape_string($conexion, $_POST['correo']);
+        $fecha =  $_POST['fecha'];
+        $sexo = mysqli_real_escape_string($conexion, $_POST['sexo']);
 
-    // verificar si la contraseña es correcta
-    $clave_encriptada = sha1($clave);
-    $sqlUser = "SELECT id from Usuarios WHERE username ='$usuario'";
+        // verificar si la contraseña es correcta
+        $clave_encriptada = sha1($clave);
+        $sqlUser = "SELECT id from Usuarios WHERE username ='$usuario'";
 
-    $resultadoUser = $conexion->query($sqlUser);
-    $filas = $resultadoUser -> num_rows;
+        $resultadoUser = $conexion->query($sqlUser);
+        $filas = $resultadoUser -> num_rows;
 
-    // delaclarar si la fila es mayor a cero
-    if($filas > 0)
-    {
-        echo "<script> alert('el usuario ya existe ');
-                window.location ='./index.php';
-                </script>";
+        // delaclarar si la fila es mayor a cero
+        if($filas > 0)
+        {
+            echo "<script> alert('el usuario ya existe ');
+                    window.location ='./index.php';
+                    </script>";
+        }
+
+        // inserto la informacion del usuarios username, clave, nombre, apellido, correo,sexo
+        $sql = "INSERT INTO Usuarios (username, clave, nombre, apellido,correo,fecha_nacimiento,sexo) 
+                VALUE('$usuario', '$clave','$nombre','$apellido','$correo', '$fecha' ,'$sexo' )";
+        $resultadosql=$conexion ->query($sql);
+        if($resultadosql > 0){
+                echo "<script>
+                            alert('registro Existoso');
+                            window.location = './index.php;
+                        </script>";
+        }else {
+                echo "<script>
+                        alert('error a registarse');
+                        window.location = './index.php';
+                    </script>";
+            } 
+
     }
-
-    // inserto la informacion del usuarios username, clave, nombre, apellido, correo,sexo
-    $sql = "INSERT INTO Usuarios (username, clave, nombre, apellido,correo,fecha_nacimiento,sexo) 
-            VALUE('$usuario', '$clave','$nombre','$apellido','$correo', '$fecha' ,'$sexo' )";
-    $resultadosql=$conexion ->query($sql);
-    if($resultadosql > 0){
-        	echo "<script>
-						alert('registro Existoso');
-						window.location = './index.php;
-					</script>";
-	}else {
-			echo "<script>
-					alert('error a registarse');
-					 window.location = './index.php';
-				</script>";
-		} 
-
-}
 
 
 ?>
@@ -160,27 +159,18 @@ if (isset($_POST["Crear_Cuenta"])){
 </div>
 
  <section class="Contenedor__destino">
-    <header class="Encabezado">
-        <h3>Descubre nuestros destinos</h3>
+    <header >
+        <h3 class="Encabezado">Descubre nuestros destinos</h3>
         <hr class="linea">
     </header>
     <article class="Contenedor__Flex">
-        <figure class="ContenedorCards">
-            <figure class="cards">
-                <img src="./imagenes/olon.jpg" alt="montañita" class="ImgCambiante" id="ImgCambiante"> 
+              <figure class="cards">
+                <img src="./imagenes/olon.jpg" alt="montañita" class="ImgCambiante" id="ImgCambiante">
                 <figcaption class="Contenido">
                     <h4 id="NombreComuna">Olon</h4>
                     <p id="DescripcionComuna">La capital de las mil opciones</p>
                 </figcaption>
             </figure>
-
-                <form action="index.php" class="formularioBusqueda">
-                    <input type="search" name="searc" id="search" placeholder="(Buscar otros DESTINOS)">
-                </form>
-
-                <a href="#" class="btnMapaInteractivo">ir al mapa interactivo</a>
-        </figure>
-    
             <figure class="MapaInteractivo">
                 <img src="./imagenes/Map.svg" alt="mapa de santa elena" class="Mapa">
                 <ul class="MapaInteractivo__Localizador" >
@@ -196,7 +186,7 @@ if (isset($_POST["Crear_Cuenta"])){
 
                     <li id="PuntoCuria"  onmousemove="Ver__Comuna__C()" >
                         <span class="Circle C3"></span>
-                        <a href="#" class="Text Text3" >  Curía</a>
+                        <a href="curia.php" class="Text Text3" >  Curía</a>
                     </li>
 
                     <li  id="PuntoSanJose"   onmousemove="Ver__Comuna__SJ()">
@@ -225,8 +215,9 @@ if (isset($_POST["Crear_Cuenta"])){
                         <span class="Circle  C8__Mapa"></span>
                         <a href="ancon.php" class="Text Text8 Text8__Mapa" >  Ancon</a>
                     </li>
-                </ul>
+                </ul> 
             </figure>
+          </div>
     </article>
 </section>
 

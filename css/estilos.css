@@ -8,7 +8,6 @@
 
 :root{
     --blue: rgb(8,32,50);
-        --blueO: rgba( 8  32 50 / .8);
 
     --blueo: rgb(8 32 50 / .);
     --indigo: rgb(102 16 242);
@@ -200,18 +199,7 @@ height: 10px;
     color: var(--dark);
 
 }
-/* 
-.TituliD{
-background-color: #000;
-wudth
-    font-size: 19px;
-    height: 15px;
-    position: relative;
-    top: 15px;
-    left: 2rem;
-    color: var(--gray-dark);
-    
-} */
+
 
 
 .list__show {
@@ -698,157 +686,81 @@ height: 34vh;
 
 
 /* Seccion Destino */
-
 .Contenedor__destino{
-    width: 100%;
-    height: 100vh;
-    padding: 0 88px;
-    
+    text-align:left;
+    /* margin: 15px 16px;  */
+    width: auto;
+    height: 90vh;
+    background-color: rgba( 8  32 50 / .8);
 }
 
-
-.Encabezado h3{
-margin-top: 2.3rem;
-    font-size: 35px;
-    font-weight: 400;
+.Encabezado{
+    font-size: 28px;
     text-align: left;
-    margin-top: 8rem;
-    margin-left: 5rem;
-    margin-bottom: 1.2rem;
-    
+    margin-left: 100px;
+    padding-top: 25px;
+    color:var(--light);
 }
 
 .linea{
-    background-color: orange;
-    width: 55px;
-    margin-left: 5rem;
-    margin-bottom: 15px;
-    padding: 2px 4px;
+    width: 10%;
+    height: 4px;
+    margin:  12px 0 0 100px;
+    background-color: var(--orange);
 }
 
 .Contenedor__Flex{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    left: 2.5rem;
-} 
-
+    justify-content: space-around; 
+    align-items: center; 
+    width: auto;
+    height: 650px;
+    margin-left: 100px;
+}
 
 .cards{
     position: relative;
-    width: 280px;
-    height: 390px;
-    background-color: #000;
-    margin-bottom: 2.3rem;
+    background-color: #fff;
+    width: 500px;
+    height: 450px;
 }
 
 .ImgCambiante{
-    width: 280px;
-    height: 390px;
-    cursor: pointer;
-    opacity: 5;
-}
-
-.ImgCambiante:hover{
-  filter:invert(80deg);
+    width:500px;
+    height: 450px;    
 }
 
 .Contenido{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 15px;
-    color: #fff;
-    text-align:center;
-} 
+    bottom: 40px;
+    text-align: center;
+}
 
-.Contenido h4{
-    color: #f5f4f7;
+.Contenido h4 {
     font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--gray);
 }
 
-.formularioBusqueda{
-    margin-bottom: 2rem;
+.Contenido p {
+    font-size: 16px;
+    color: var(--gray);
 }
 
-.formularioBusqueda input{
-    background-color:var(--light);
-    display: flex;
-    width: 280px;
-    height: 29px;
-    padding: 0 25px;
-    border: none;
-    outline: 1px solid var(--gray-dark);
-}
-
-.formularioBusqueda input:focus{
-    outline: 1px solid var(--gray);
-}
-
-.busqueda__entrada::placeholder{
-    text-align: center;
-    text-transform: capitalize;
-
-}
-
-.btnMapaInteractivo{
-    background-color: var(--gray-dark);
-    color: aliceblue;
-    padding: 4px 12px;
-    text-align: center;
-    margin-left: 15px;
-    font-size: 19px;
-
-}
-
-.btnMapaInteractivo:hover{
-    background-color: var(--cyan);
-}
-
-.ContenedorCards{
-    width: 30%;
-}
 .MapaInteractivo{
     position: relative;
-    bottom: 1.8rem;
-    width: 40%;
-    height: 60vh;
+    
 }
 
 .Mapa{
-    width: 650px;
-
+    width: 880px;
+    height: 650px;
 }
 
-.MapaInteractivo__Localizador{
-   position: absolute;
-   top: 0;
-   left: -120px;
-
-}
-
-.C7__Mapa  {
-    top: 21.1rem;
-    left:  18.8rem;
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: #f5f;
-}
-
-.Text7__Mapa{
-  background: #fff;
-}
-
-.C8__Mapa  {
-    top: 22rem;
-    left:  22rem;
-    background-color: #B45;
-    width: 1.5rem;
-    height: 1.5rem;                        
-}
-
+/* Cards */
 
 .Flex__Contenedor{
     display: flex;

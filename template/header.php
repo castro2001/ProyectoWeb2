@@ -42,7 +42,7 @@
                         <li ><a href="lanunez.php" class=" nav_item  "  id="Id_Nunez" onmouseover="mostrar_1()" onmouseout="No_mostrar_1()">Las Nuñez</a></li>
                         <li><a href="#" class="nav_item " id="Id_La_Entrada" onmouseover="mostrar_2()" onmouseout="No_mostrar_2()">La Entrada</a>            
                         </li>
-                        <li ><a href="#" class="nav_item " id="Id_Curia"onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >Curía</a>            
+                        <li ><a href="curia.php" class="nav_item " id="Id_Curia"onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >Curía</a>            
                         </li>
                         <li ><a href="sanjose.php" class="nav_item " id="Id_San_Jose" onmouseover="mostrar_4()" onmouseout="No_mostrar_4()">San José</a>                 
                         </li>
@@ -59,21 +59,37 @@
                         <img src="imagenes\Map.svg" alt="mapa" class="img" >
                             <ul class="localizador_mapa" >
                                 <li  title="Nuñez"id="Circle_Nuñez" class="Circle C1"    onmouseover="mostrar_1()" onmouseout="No_mostrar_1()" ></li>
-                                <li id="Text_Box_Nuñez" class="Text Text1 "onmouseover="mostrar_1()" onmouseout="No_mostrar_1()" >Las Nuñez</li> 
+                                <li id="Text_Box_Nuñez" class="Text Text1 "onmouseover="mostrar_1()" onmouseout="No_mostrar_1()" >
+                                    Las Nuñez
+                                </li> 
                                 <li title="Entrada" id="Circle_La_Entrada" class="Circle C2 "  onmouseover="mostrar_2()" onmouseout="No_mostrar_2()" ></li>
-                                <li id="Text_Box_La_Entrada" class="Text Text2 "onmouseover="mostrar_2()" onmouseout="No_mostrar_2()"  >La Entrada</li> 
+                                <li id="Text_Box_La_Entrada" onmouseover="mostrar_2()" onmouseout="No_mostrar_2()"  >
+                                <a href="lanunez.php">La Entrada
+                                </li> 
                                 <li title="Curía" id="Circle_Curía" class="Circle C3" onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" ></li>
-                                <li id="Text_Box_Curía" class="Text Text3" onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >Curía</li> 
+                                <li id="Text_Box_Curía" class="Text Text3" onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >
+                                <a href="lanunez.php"> Curía</a>
+                                </li> 
                                 <li title="San Jose" id="Circle_San_José" class="Circle C4" onmouseover="mostrar_4()" onmouseout="No_mostrar_4()" ></li>
-                                <li id="Text_Box_San_José" class="Text Text4 " onmouseover="mostrar_4()" onmouseout="No_mostrar_4()" >San Jose</li> 
+                                <li id="Text_Box_San_José" class="Text Text4 " onmouseover="mostrar_4()" onmouseout="No_mostrar_4()" >
+                                <a href="lanunez.php">San Jose</a>
+                                </li> 
                                 <li title="Olon" id="Circle_Olón" class="Circle C5" onmouseover="mostrar_5()" onmouseout="No_mostrar_5()" ></li>
-                                <li id="Text_Box_Olón" class="Text Text5" onmouseover="mostrar_5()" onmouseout="No_mostrar_5()" >Olon</li> 
+                                <li id="Text_Box_Olón" class="Text Text5" onmouseover="mostrar_5()" onmouseout="No_mostrar_5()" >
+                                <a href="lanunez.php"> Olon</a>
+                                </li> 
                                 <li title="Montañita" id="Circle_Montañita" class="Circle C6" onmouseover="mostrar_6()" onmouseout="No_mostrar_6()" ></li>
-                                <li id="Text_Box_Montañita" class="Text Text6 "  onmouseover="mostrar_6()" onmouseout="No_mostrar_6()" >Montañita</li> 
+                                <li id="Text_Box_Montañita" class="Text Text6 "  onmouseover="mostrar_6()" onmouseout="No_mostrar_6()" >
+                                <a href="lanunez.php"> Montañita</a>
+                                </li> 
                                 <li title="Aconcito" id="Circle_Anconcito" class="Circle C7" onmouseover="mostrar_7()" onmouseout="No_mostrar_7()" ></li>
-                                <li id="Text_Box_Anconcito" class="Text Text7 " onmouseover="mostrar_7()" onmouseout="No_mostrar_7()" >Aconcito</li> 
+                                <li id="Text_Box_Anconcito" class="Text Text7 " onmouseover="mostrar_7()" onmouseout="No_mostrar_7()" >
+                                <a href="lanunez.php"> Aconcito</a>
+                                </li> 
                                 <li  title="Ancon" id="Circle_Ancon" class="Circle C8 " onmouseover="mostrar_8()" onmouseout="No_mostrar_8()"  ></li>
-                                <li id="Text_Box_Ancón" class="Text Text8 " onmouseover="mostrar_8()" onmouseout="No_mostrar_8()"  >Ancon</li> 
+                                <li id="Text_Box_Ancón" class="Text Text8 " onmouseover="mostrar_8()" onmouseout="No_mostrar_8()"  >
+                                <a href="lanunez.php"> Ancon</a>
+                                </li> 
                             </ul>
                     </div> 
                 </div>
